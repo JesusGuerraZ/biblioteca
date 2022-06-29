@@ -5,23 +5,67 @@
 // Active Admin source.
 //
 // For example, to change the sidebar width:
-// $sidebar-width: 242px;
 
-// Active Admin's got SASS!
-body {
-    background-color: aqua;
-}
+
+
+// Active Admin's got SASS
+
 @import "active_admin/mixins";
 @import "active_admin/base";
 
-
-$skinActiveColor: #40AA52;
-$skinHeaderBck: #194320;
-$panelHeaderBck: #194320;
-@import "active_skin";
 
 
 // Overriding any non-variable Sass must be done after the fact.
 // For example, to change the default status-tag color:
 //
-//   .status_tag { background: #6090DB; }
+.panel_contents { 
+    background: linear-gradient(90deg, rgba(230, 36, 36, 0.479) , rgba(177, 100, 100, 0.493));
+    border-radius: 20px;
+
+}
+
+.sidebar_section {
+    background: rgba(204, 127, 248, 0.534);
+    border-radius: 20px;
+}
+
+.sidebar{
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    left: 270px;
+
+}
+.sidebar h3 {
+    background: rgb(228 ,186, 251);
+    border-radius: 40px;
+    margin-top: 5px;
+}
+
+.main_content_wrapper{
+    background: #000;
+}
+
+#main_content_wrapper #main_content {
+    margin-left: 250px;
+}
+
+.index_table {
+    background: linear-gradient(90deg, rgb(228, 115, 149) , rgb(206, 139, 172));
+    border-radius: 12px;
+
+}
+
+td.col-email{
+    font-size: 14px;
+}
+
+table.index_table th {
+    background: rgba(204, 127, 248, 0.534);
+    border: 2px rgb(224, 144, 231);
+    font-size: 18px;
+}
+
+body {
+    background: rgba(247, 199, 252, 0.466);
+}
+
